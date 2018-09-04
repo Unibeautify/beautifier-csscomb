@@ -1,0 +1,18 @@
+{
+    "sort-order": [
+        [
+            "content", "quotes"
+        ],
+        [
+            "display", "visibility"
+        ],
+        [
+            "position",
+            "z-index",
+            "top",
+            "right",
+            "bottom",
+            "left"
+        ]
+    ]
+}
