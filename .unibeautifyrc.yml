@@ -1,4 +1,7 @@
 ---
+JSON:
+  indent_char: " "
+  indent_size: 2
 TypeScript:
   beautifiers: ["Prettier"]
   align_assignments: false

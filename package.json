@@ -18,9 +18,7 @@
     "url": "git+https://github.com/Unibeautify/beautifier-csscomb.git"
   },
   "keywords": [
-    "eslint",
-    "unibeautify",
-    "beautifier"
+    "eslint", "unibeautify", "beautifier"
   ],
   "author": "Glavin Wiechert",
   "license": "MIT",
@@ -29,9 +27,12 @@
   },
   "homepage": "git+https://github.com/Unibeautify/beautifier-csscomb#readme",
   "peerDependencies": {
-    "unibeautify": ">= 0.12.1"
+    "unibeautify": ">= 0.12.1",
+    "cosmiconfig": "^5.0.6",
+    "csscomb": "^4.2.0"
   },
   "devDependencies": {
+    "@types/cosmiconfig": "^5.0.3",
     "@types/jest": "23.3.1",
     "@types/node": "10.9.4",
     "@types/read-pkg-up": "3.0.1",
@@ -47,7 +48,6 @@
     "unibeautify": "0.17.0"
   },
   "dependencies": {
-    "@types/cosmiconfig": "^5.0.3",
     "read-pkg-up": "^4.0.0"
   }
 }

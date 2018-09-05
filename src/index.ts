@@ -27,7 +27,8 @@ export const beautifier: Beautifier = {
     Sass: options.CSS,
   },
   resolveConfig: ({ filePath, projectPath, dependencies }) => {
-    if (!filePath) {
+    const pathToSearch = filePath ? filePath : projectPath;
+    if (!pathToSearch) {
       return Promise.resolve({});
     }
     const Comb = dependencies.get<NodeDependency>("CSScomb").package;
@@ -39,16 +40,24 @@ export const beautifier: Beautifier = {
         "csscomb.js",
       ],
     });
-    const cosmicFund = explorer.searchSync(filePath);
-    try {
-      return Promise.resolve({
-        config: cosmicFund ? cosmicFund.config : Comb.detectInFile(filePath),
+    return explorer
+      .search(pathToSearch)
+      .then(result => {
+        if (!result) {
+          return Promise.resolve({
+            config: Comb.detectInFile(pathToSearch),
+          });
+        } else {
+          return Promise.resolve({
+            config: result.config,
+          });
+        }
+      })
+      .catch(error => {
+        // tslint:disable-next-line:no-console
+        console.log(error);
+        return Promise.resolve({});
       });
-    } catch (error) {
-      // tslint:disable-next-line:no-console
-      console.log(error);
-      return Promise.resolve({});
-    }
   },
   beautify({
     text,
