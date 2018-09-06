@@ -1,7 +1,7 @@
 {
   "name": "@unibeautify/beautifier-csscomb",
   "version": "0.0.1",
-  "description": "csscomb beautifier for Unibeautify",
+  "description": "CSScomb beautifier for Unibeautify",
   "main": "dist/src/index.js",
   "typings": "dist/src/index.d.ts",
   "scripts": {
