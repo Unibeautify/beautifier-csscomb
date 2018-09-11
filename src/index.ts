@@ -1,4 +1,3 @@
-// tslint:disable:no-console
 import {
   Beautifier,
   Language,
@@ -70,12 +69,15 @@ export const beautifier: Beautifier = {
     return new Promise<string>((resolve, reject) => {
       const CSScomb = dependencies.get<NodeDependency>("CSScomb").package;
       const config = (beautifierConfig && beautifierConfig.config) || {};
+      if (Object.keys(config).length === 0) {
+        reject(new Error("No configuration!"));
+      }
       const comb = new CSScomb(config);
       const result = comb.processString(text);
       if (result) {
         return resolve(result);
       } else {
-        return resolve(text);
+        return reject(new Error("Failed processing the text!"));
       }
     });
   },
