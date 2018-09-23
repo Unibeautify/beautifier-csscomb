@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/Unibeautify/beautifier-csscomb/issues"
   },
-  "homepage": "git+https://github.com/Unibeautify/beautifier-csscomb#readme",
+  "homepage": "https://github.com/Unibeautify/beautifier-csscomb#readme",
   "peerDependencies": {
     "unibeautify": ">= 0.12.1",
     "cosmiconfig": "^5.0.6",
