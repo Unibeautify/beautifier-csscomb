@@ -34,12 +34,12 @@
     "csscomb": "^4.2.0"
   },
   "devDependencies": {
-    "@types/cosmiconfig": "^5.0.3",
+    "@types/cosmiconfig": "5.0.3",
     "@types/jest": "23.3.1",
     "@types/node": "10.9.4",
     "@types/read-pkg-up": "3.0.1",
-    "cosmiconfig": "^5.0.6",
-    "csscomb": "^4.2.0",
+    "cosmiconfig": "5.0.6",
+    "csscomb": "4.2.0",
     "jest": "23.5.0",
     "rimraf": "2.6.2",
     "ts-jest": "23.1.4",
