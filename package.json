@@ -1,6 +1,6 @@
 {
   "name": "@unibeautify/beautifier-csscomb",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "CSScomb beautifier for Unibeautify",
   "main": "dist/src/index.js",
   "typings": "dist/src/index.d.ts",
@@ -18,7 +18,9 @@
     "url": "git+https://github.com/Unibeautify/beautifier-csscomb.git"
   },
   "keywords": [
-    "csscomb", "unibeautify", "beautifier"
+    "csscomb",
+    "unibeautify",
+    "beautifier"
   ],
   "author": "Glavin Wiechert",
   "license": "MIT",
