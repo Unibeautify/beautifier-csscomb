@@ -38,13 +38,13 @@ test(`should successfully beautify CSS text with given sort-order`, () => {
       expect(results).toBe(beautifierResult);
     });
 });
+
 test(`should not beautify because we are not passing in file path`, () => {
   const unibeautify = newUnibeautify();
   unibeautify.loadBeautifier(beautifier);
   const text = `.test {content: '';}`;
-  const beautifierResult = `.test {\ncontent: '';\n}`;
-  return unibeautify
-    .beautify({
+  return expect(
+    unibeautify.beautify({
       languageName: "CSS",
       options: {
         CSS: {
@@ -55,17 +55,16 @@ test(`should not beautify because we are not passing in file path`, () => {
       },
       text,
     })
-    .then(results => {
-      expect(results).toBe(beautifierResult);
-    });
+  ).rejects.toThrowError("No configuration file found!");
 });
+
 test(`should not beautify because file path does not find a config`, () => {
+  expect.hasAssertions();
   const unibeautify = newUnibeautify();
   unibeautify.loadBeautifier(beautifier);
   const text = `.test {content: '';}`;
-  const beautifierResult = `.test {\ncontent: '';\n}`;
-  return unibeautify
-    .beautify({
+  return expect(
+    unibeautify.beautify({
       filePath: errorFilePath,
       languageName: "CSS",
       options: {
@@ -77,7 +76,5 @@ test(`should not beautify because file path does not find a config`, () => {
       },
       text,
     })
-    .then(results => {
-      expect(results).toBe(beautifierResult);
-    });
+  ).rejects.toThrowError("No configuration file found!");
 });
