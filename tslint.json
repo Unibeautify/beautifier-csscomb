@@ -69,7 +69,8 @@
       }
     ],
     "id-length": [
-      true, [
+      true,
+      [
         "_", "T"
       ]
     ],
