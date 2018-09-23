@@ -18,9 +18,7 @@
     "url": "git+https://github.com/Unibeautify/beautifier-csscomb.git"
   },
   "keywords": [
-    "csscomb",
-    "unibeautify",
-    "beautifier"
+    "csscomb", "unibeautify", "beautifier"
   ],
   "author": "Glavin Wiechert",
   "license": "MIT",
