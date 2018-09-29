@@ -38,8 +38,6 @@
     "@types/jest": "23.3.2",
     "@types/node": "10.9.4",
     "@types/read-pkg-up": "3.0.1",
-    "cosmiconfig": "5.0.6",
-    "csscomb": "4.2.0",
     "jest": "23.5.0",
     "rimraf": "2.6.2",
     "ts-jest": "23.1.4",
@@ -50,6 +48,8 @@
     "unibeautify": "0.17.0"
   },
   "dependencies": {
-    "read-pkg-up": "^4.0.0"
+    "read-pkg-up": "^4.0.0",
+    "cosmiconfig": "5.0.6",
+    "csscomb": "4.2.0"
   }
 }
