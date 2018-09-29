@@ -70,7 +70,7 @@ export const beautifier: Beautifier = {
       const CSScomb = dependencies.get<NodeDependency>("CSScomb").package;
       const config = (beautifierConfig && beautifierConfig.config) || {};
       if (Object.keys(config).length === 0) {
-        reject(new Error("No configuration!"));
+        reject(new Error("No configuration file found!"));
       }
       const comb = new CSScomb(config);
       const result = comb.processString(text);
