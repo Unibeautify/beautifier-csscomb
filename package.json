@@ -49,7 +49,6 @@
   },
   "dependencies": {
     "read-pkg-up": "^4.0.0",
-    "cosmiconfig": "5.0.6",
-    "csscomb": "4.2.0"
+    "cosmiconfig": "5.0.6"
   }
 }
