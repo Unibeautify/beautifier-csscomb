@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@types/cosmiconfig": "5.0.3",
-    "@types/jest": "23.3.10",
+    "@types/jest": "23.3.11",
     "@types/node": "10.12.18",
     "@types/read-pkg-up": "3.0.1",
     "jest": "23.6.0",
