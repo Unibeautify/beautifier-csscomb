@@ -28,7 +28,7 @@
   "homepage": "https://github.com/Unibeautify/beautifier-csscomb#readme",
   "peerDependencies": {
     "unibeautify": ">= 0.12.1",
-    "csscomb": "4.2.0"
+    "csscomb": "4.3.0"
   },
   "devDependencies": {
     "@types/cosmiconfig": "5.0.3",
@@ -43,7 +43,7 @@
     "tslint-microsoft-contrib": "6.1.1",
     "typescript": "3.4.3",
     "unibeautify": "0.17.0",
-    "csscomb": "4.2.0"
+    "csscomb": "4.3.0"
   },
   "dependencies": {
     "read-pkg-up": "^5.0.0",
