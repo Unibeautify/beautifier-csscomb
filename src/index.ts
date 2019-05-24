@@ -9,7 +9,7 @@ import * as cosmiconfig from "cosmiconfig";
 import * as readPkgUp from "read-pkg-up";
 import options from "./options";
 
-const { pkg } = readPkgUp.sync({ cwd: __dirname });
+const pkg = readPkgUp.sync({ cwd: __dirname })!.package;
 export const beautifier: Beautifier = {
   name: "CSScomb",
   package: pkg,
