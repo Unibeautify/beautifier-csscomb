@@ -34,7 +34,7 @@
     "@types/cosmiconfig": "5.0.3",
     "@types/jest": "24.9.1",
     "@types/node": "12.12.31",
-    "jest": "24.9.0",
+    "jest": "26.0.0",
     "rimraf": "3.0.2",
     "ts-jest": "24.3.0",
     "tslint": "5.20.1",
