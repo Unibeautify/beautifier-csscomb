@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@types/cosmiconfig": "5.0.3",
-    "@types/jest": "24.9.1",
+    "@types/jest": "26.0.23",
     "@types/node": "12.12.31",
     "jest": "24.9.0",
     "rimraf": "3.0.2",
