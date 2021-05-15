@@ -45,7 +45,7 @@
     "csscomb": "4.3.0"
   },
   "dependencies": {
-    "read-pkg-up": "^7.0.0",
+    "read-pkg-up": "^8.0.0",
     "cosmiconfig": "5.2.1"
   }
 }
